@@ -6,10 +6,18 @@ body {
    }
 
 .footer{
-    background-color: black;
-    height: 100%;
-    width: 100%;
+    background-color: #3C7630;
+    width:100% ;
+    height: 50%;
     display: flex;
     justify-content: space-evenly;
-    height: 20em;
+ 
+}
+
+img{
+    width: 50%;
+    height: 55w;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
