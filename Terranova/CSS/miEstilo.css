@@ -3,7 +3,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: monospace;
+    padding: 0;
+    margin:0 auto;
+    text-align: center;
    }
+
+.logo-empresa{
+    min-width: 100px;
+    max-height: 107px;
+    
+}
 
 .footer{
     background-color: #3C7630;
@@ -11,7 +21,9 @@ body {
     height: 50%;
     display: flex;
     justify-content: space-evenly;
- 
+    clear: both;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
 img{
