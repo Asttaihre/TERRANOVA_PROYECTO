@@ -1,4 +1,14 @@
-body {
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url(../IMG/fondo-mayor.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo{
     background-image: url(../IMG/fondo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,62 +17,81 @@ body {
     padding: 0;
     margin:0 auto;
     text-align: center;
-   }
-
-.logo-empresa{
-    min-width: 100px;
-    max-height: 107px;
-    
-}
-
-.footer{
-    background-color: #3C7630;
-    width:100% ;
-    height: 50%;
     display: flex;
-    justify-content: space-evenly;
-    clear: both;
-    box-sizing: border-box;
-    margin-top: 20px;
+    flex-flow: column nowrap;
 }
 
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+   .menu{
+       background: #053;
+   }
+       .navbar{
+           background: rgb(18, 124, 35);
+       }
+           .navbar-brand{
+               background: rgb(18, 124, 35);
+           }
+           .logo-empresa{
+               background: rgb(18, 124, 35);
+               min-width: 100px;
+               max-height: 107px;    
+           }
+           .collapse{
+               background: rgb(18, 124, 35);
+           }
+           .navbar-nav{
+               background: rgb(18, 124, 35);
+           }
+           .nav-item{
+               background: rgb(18, 124, 35);
+           }
+           .nav-link{
+               background: rgb(18, 124, 35);
+           }
+           .form-inline{
+               background: rgb(18, 124, 35);
+           }
+           .btn{
+               background: #444;
+           }
+           .form-control{
+               background: rgb(255, 255, 255);
+           }
+       .menu img{
+        width: 50%;
+        height: 55w;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       }
 
-
-.carousel-inner img{
-    image-rendering: auto;
-    transition: all 200ms;
-    width: 70%;
-    height: 70%;
+.section{
+    background: #000;
 }
-
-.carousel-caption{
-    color: rgb(255, 25, 25);
-    font-family: fantasy;
-    font-size: x-large;
-    font-style: normal;
-    font-weight: lighter;
-    font-variant: small-caps;
+   .articulos{
+       background: #634;
+   }
+      .article{
+          background: #053;
+      }
+      .navegacion{
+          background: #094;
+      }
+   .aside{
+       background: #329;
+   }   
+      .publicidad{
+          background: #763;
+      }
+.footer{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
 }
-
-.content-foo{
-    color: black;
-    font-family: Helvetica;
-}
-
-.content-foo h4{
-    text-decoration: underline;
-}
-
-.tel-num{
-    min-width: 20px;
-    max-height: 30px;
-    
-}
-.email{
-    min-width: 20px;
-    max-height: 30px;
-}
-.direccion{
-    min-width: 20px;
-    max-height: 30px;
-}
+   .content-foo{
+       background: #289;
+       flex: 1 1 auto;
+   }
