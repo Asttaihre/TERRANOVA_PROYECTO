@@ -31,6 +31,10 @@
 
 }
 
+.card p{
+    background: #9D9D62;
+}
+
 .navbar {
     background: #464E2E;
 }
