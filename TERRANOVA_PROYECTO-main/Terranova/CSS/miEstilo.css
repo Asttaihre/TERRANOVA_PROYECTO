@@ -31,16 +31,16 @@
 
 }
 
-.card p{
-    background: #9D9D62;
-}
-
 .navbar {
     background: #464E2E;
 }
 
 .navbar-brand {
     background: #464E2E;
+}
+
+.card p{
+    background: #9D9D62;
 }
 
 .logo-empresa {
@@ -185,18 +185,10 @@ section h2 {
 
 }
 
-.section {
-    size-adjust: inherit;
 
-}
-
-.carousel-inner {
-    size-adjust: inherit;
-
-}
 
 .carousel-item {
-    size-adjust: inherit;
+    
     min-height: 300px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -205,9 +197,6 @@ section h2 {
     background-size: cover;
 }
 
-.d-block {
-    size-adjust: inherit;
-}
 
 
 
@@ -280,7 +269,5 @@ p {
         justify-content: center;
     }
 
-    .section {
-        size-adjust: inherit;
-    }
+    
 }
