@@ -1,0 +1,255 @@
+* {
+    margin: 0px ;
+    
+    padding: 0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: #464E2E;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: #464E2E;
+    align-items: center;
+
+}
+
+
+
+.section {
+    background: #464E2E;
+    display: flex;
+}
+
+.estilo-b {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.estilo-b .img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.estilo-b .img-container img {
+    width: 100%;
+}
+
+.estilo-b .img-container .price {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    background: #C9E4C5;
+    padding: 15px;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:  0;
+}
+
+section h2 {
+    width: 100%;
+    color: white;
+    font-family: monospace;
+}
+
+.card {
+    width: 33.333333%;
+}
+
+
+.estilo-b a {
+    display: inline-block;
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: white;
+    padding: 15px;
+    border: 3px solid white;
+}
+
+.estilo-b a:hover {
+    color: #F7F5F2;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+
+.footer {
+    background: #423F3E;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.content-foo {
+    background: #464E2E;
+    flex: 1 1 auto;
+}
+
+.content-foo h4 {
+    background: #464E2E;
+    color: #F0F0F0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+
+}
+
+.content-foo img {
+    background: #464E2E;
+    min-width: 10px;
+    max-height: 20px;
+
+}
+
+.content-foo p {
+    background: #464E2E;
+
+}
+
+
+
+.carousel-item {
+    
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+.carousel-caption {
+    background: none;
+}
+
+.carousel-caption h5 {
+    font-family: fantasy;
+    font-size: xxx-large;
+    font-style: normal;
+    font-weight: lighter;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: lighter;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.carousel-caption h5,
+p {
+    background: none;
+}
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+
+@media all and (max-width:800px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+.card{
+    background: rgb(92, 92, 95);
+}
+.card-body{
+    background: rgb(85, 194, 85);
+}
+.card-tittle{
+    background: rgb(85, 194, 85);
+}
+
+
+#galeria .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img{
+    width: 100%;
+    height: 300px;
+}
+#galeria img:hover{
+    border: 5px solid #f7f7f7;
+}
+
+#maceteros .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+#maceteros img{
+    width: 100%;
+    height: 300px;
+}
+#maceteros img:hover{
+    border: 5px solid #f7f7f7;
+}
