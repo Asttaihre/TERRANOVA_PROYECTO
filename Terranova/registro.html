@@ -10,6 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="IMG/favicon.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   <title>Terranova</title>
   <link rel="stylesheet" href="CSS/miEstilo.css">
 </head>
@@ -35,7 +36,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="IMG/cart.png" alt="" width="43px"> CARRITO</a>
+                <a class="nav-link" href="carrito.html"><img src="IMG/cart.png" alt="" width="43px"> CARRITO</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="registro.html"><img src="IMG/usuario.png" alt="" width="43px"> REGISTRO</a>
@@ -49,38 +50,87 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <form action="pagina2.html" enctype="multipart/form-data" method="GET" name="miForm">
-          
-          <div class="mb-3">
-              <div class="row">
-                  <div class="col">
-                      <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Nombre">
-                  </div>
-                  <div class="col">
-                      <input type="text" class="form-control" name="apellido" placeholder="Ingrese su Apellido">
-                  </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#errorName").hide();
+          $("#errorPass").hide();
+          $("#errores").hide();
+          var msg="";
+          $("#miForm").submit(function(){                    
+             
+              if($("#nombre").val().trim().length==0){
+                  msg="El nombre está en blanco!";
+                  $("#errorName").html("El nombre está en blanco!")
+                  $("#errorName").show();                        
+              }
+
+              if($("#contraseña").val().trim().length==0){
+                msg="La contraseña está en blanco!";
+                $("#errorPass").html("La contraseña esta en blanco!")
+                $("#errorPass").show();                        
+            }
+             
+              if($("#email").val().trim().length==0){
+                  msg="El email está en blanco!!";
+              }
+              if(msg!=""){
+                  $("#errores").html(msg);
+                  $("#errores").show();
+                  event.preventDefault();
+              }
+          });
+          $("#nombre").focus(function(){
+              $("#errorName").hide();
+              $("#errores").hide();
+              $("errorPass").hide();
+              msg="";
+          });
+      });
+  </script>
+
+<body>
+  <div class="container">
+      <form action="index.html" id="miForm">
+          <div class="row mb-3">
+              <div class="col">
+                  <a class="nav-link"></a><img src="IMG/usuario.png" alt="" width="43px"></a>
+                  <label for="nombre" class="form-label">Nombre Completo</label>
+                  <input type="text" id="nombre" name="nombre" class="form-control">
+              </div>
+              <div class="col">
+                  <label for="errorName" class="form-label">.</label>
+                  <div id="errorName" class="alert alert-danger" role="alert"></div>
               </div>
           </div>
-          <div class="mb-3" id="miId">
-            <label for="edad" class="form-label"></label>
-            <input type="number" class="form-control" name="edad" id="edad" placeholder="Ingrese su edad">
+          <div class="row mb-3">
+              <div class="col">
+                  <a class="nav-link"></a><img src="IMG/747314.png" alt="" width="43px"></a>
+                  <label for="email" class="form-label">Correo Electr&oacute;nico</label>
+                  <input type="email" id="email" name="email" class="form-control">
+              </div>
+              <div class="col">
+                <label for="errores" class="form-label">.</label>
+                <div id="errores" class="alert alert-danger" role="alert"></div>
+            </div>
           </div>
-          <div class="mb-3">
-            <div class="row">
-                <div class="col">
-                    <label for="correo" class="form-label"></label>
-                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su Correo">
-                    
-                    
-                </div>
-                <div class="col">
-                    <label for="clave" class="form-label"></label>
-                    <input type="password" class="form-control" id="clave" name="clave" placeholder="Ingrese su Contraseña">
-                </div>
-            </div>                    
+          <div class="row mb-3">
+            <div class="col">
+                <a class="nav-link"></a><img src="IMG/contraseña.png" alt="" width="43px"></a>
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" class="form-control">
+            </div>
+            <div class="col">
+              <label for="errorPass" class="form-label">.</label>
+              <div id="errorPass" class="alert alert-danger" role="alert"></div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+          <div class="mb-3">
+              <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+              <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+           
+          </div>
+      </form>
+  </div>
      
       <footer class="footer">
         <div class="content-foo">
@@ -98,7 +148,7 @@
         </div>
       </footer>
 
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
